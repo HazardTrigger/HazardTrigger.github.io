@@ -11,49 +11,37 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.S. in Computer Software Engineering, Tianjin University, 2017-2021
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* July 2021-now: Research assistant (Contract)
+  * College of Intelligence and Computing, Tianjin University
+  * Tianjin, China
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Data Analysis
+* Data Visualization
+* Machine Learning
+* Python
+* JavaScript
+* D3.js
+* Spatiotemporal Visualization
+* Complex Networks
 
-Publications
+
+Patent
 ======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
+* 用于金融网络的风险可视化的图布局方法 CN 202110572838.8 
+  * Date of Application: 2021.05.31
+
+* 一种担保网络的传染风险的量化方法 CN 202010684959.7 
+  * Date of Application: 2020.07.15
+
+Honorary award
 ======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* ChinaVis 2020 数据可视分析挑战赛 三等奖
+  * Issuing authority: China Visualization and Visual Analytics Conference
+  * Issue date: 2020.11
+
