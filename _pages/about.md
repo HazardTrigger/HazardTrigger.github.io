@@ -8,8 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-About me
-======
 I am currently a research assistant in [College of Intelligence and Computing](http://cic.tju.edu.cn/), Tianjin University, under the supervision of Associate Professor [Zhibin Niu](http://cic.tju.edu.cn/info/1073/1206.htm). I received my Bachelor’s degree in Tianjin University in Tianjin, China, where I am a member of Visual Computing Lab in College of Intelligence and Computing.
 
 
