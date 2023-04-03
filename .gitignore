@@ -10,10 +10,6 @@
 # production
 # /dist
 
-/mock
-/src
-/public
-
 # misc
 .DS_Store
 
