@@ -24,7 +24,7 @@ let camera: THREE.PerspectiveCamera;
 
 const GLTF2Engine: React.FC = () => {
     const canvasRef = useRef<HTMLCanvasElement>(null);
-    const [path, setPath] = useState('/data/separate/DeerMonsterDance.gltf');
+    const [path, setPath] = useState('./data/separate/DeerMonsterDance.gltf');
     const [frameId, setFrameId] = useState(-1);
 
     const main = async () => {
@@ -41,7 +41,7 @@ const GLTF2Engine: React.FC = () => {
             0.1,
             6000,
         );
-        if (path === '/data/separate/DeerMonsterDance.gltf') {
+        if (path === './data/separate/DeerMonsterDance.gltf') {
             camera.position.set(0, 0, 300);
         } else {
             camera.position.set(0, 0, 10);
@@ -104,7 +104,7 @@ const GLTF2Engine: React.FC = () => {
             );
 
             let model = mat4.create();
-            if (path === '/data/separate/DeerMonsterDance.gltf') {
+            if (path === './data/separate/DeerMonsterDance.gltf') {
                 mat4.translate(model, model, vec3.fromValues(0, -100, 0));
                 mat4.rotate(
                     model,
@@ -154,7 +154,7 @@ const GLTF2Engine: React.FC = () => {
                 direction="vertical"
             >
                 <Select
-                    defaultValue="/data/separate/DeerMonsterDance.gltf"
+                    defaultValue="./data/separate/DeerMonsterDance.gltf"
                     style={{ width: 120 }}
                     onChange={(value: string) => {
                         setPath(value);
@@ -162,11 +162,11 @@ const GLTF2Engine: React.FC = () => {
                     size="small"
                     options={[
                         {
-                            value: '/data/separate/animateCube.gltf',
+                            value: './data/separate/animateCube.gltf',
                             label: 'Cube',
                         },
                         {
-                            value: '/data/separate/DeerMonsterDance.gltf',
+                            value: './data/separate/DeerMonsterDance.gltf',
                             label: 'DeerMonsterDance',
                         },
                     ]}
@@ -182,7 +182,7 @@ const GLTF2Engine: React.FC = () => {
                 >
                     wireframe
                 </Checkbox>
-                {path === '/data/separate/animateCube.gltf' && (
+                {path === './data/separate/animateCube.gltf' && (
                     <Radio.Group
                         onChange={(e) => {
                             animator.playAnimation(
