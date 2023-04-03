@@ -223,6 +223,7 @@ const SmartCity: React.FC = () => {
         // drawAxesHelper(550, scene);
 
         let clock = new THREE.Clock();
+        labelRenderer.domElement.style.display = 'block';
 
         const render = () => {
             let deltaTime = clock.getDelta();
@@ -242,7 +243,7 @@ const SmartCity: React.FC = () => {
         main();
         return () => {
             cancelAnimationFrame(frameId);
-            d3.selectAll('.poi').remove();
+            labelRenderer.domElement.style.display = 'none';
         };
     }, []);
 
