@@ -54,7 +54,6 @@ const GLTF2Engine: React.FC = () => {
         controls.dampingFactor = 0.05;
         controls.screenSpacePanning = false;
 
-        // await loader.loadGLTF('/data/separate/animateCube.gltf');
         await loader.loadGLTF(path);
 
         shaderProgram = new ShaderProgram(gl, vs, fs);
